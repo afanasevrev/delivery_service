@@ -17,8 +17,7 @@ public class Admins {
     @Column(name = "password")
     private String password;
     public Admins() {}
-    public Admins(Long id, String login, String password) {
-        this.id = id;
+    public Admins(String login, String password) {
         this.login = login;
         this.password = password;
     }
