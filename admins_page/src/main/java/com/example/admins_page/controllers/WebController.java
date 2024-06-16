@@ -16,8 +16,6 @@ public class WebController {
     }
     @GetMapping("/")
     private String getMainPage() {
-        Admins admin = new Admins("Don Corleone", "Chicho");
-        adminsService.createAdmin(admin);
         return "admins_page";
     }
 }
