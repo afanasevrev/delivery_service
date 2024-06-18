@@ -37,6 +37,6 @@ public class AdminsServiceImpl implements AdminsService {
         adminsEntity.setLogin(admin.getLogin());
         adminsEntity.setPassword(admin.getPassword());
         adminsRepository.save(adminsEntity);
-        return "Успешно обновлено";
+        return "Данные администратора успешно обновлены";
     }
 }
