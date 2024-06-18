@@ -7,7 +7,7 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name = "admins")
-public class Admins {
+public class AdminsEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
@@ -16,8 +16,8 @@ public class Admins {
     private String login;
     @Column(name = "password")
     private String password;
-    public Admins() {}
-    public Admins(String login, String password) {
+    public AdminsEntity() {}
+    public AdminsEntity(String login, String password) {
         this.login = login;
         this.password = password;
     }
